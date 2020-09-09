@@ -7,7 +7,7 @@
           <a href="" v-for="menu in menuList" :key="menu">{{menu}}</a>
         </el-col>
         <el-col :span="8" class="user">
-          <div class="username">{{user.name}}</div>
+          <div class="username">{{user.name}}</div> 
           <img :src="user.avatar" class="el-avatar--circle el-avatar--large">
         </el-col>
       </el-row>
