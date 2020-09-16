@@ -10,9 +10,20 @@ const routes = [
     },
     {
         path: '/',
-        name: 'Demo',
-        component: () => import('@/views/Demo')
-    }
+        name: 'Home',
+        component: () => import('@/views/Home'),
+        meta:{keepAlive:true}
+    },
+    {
+        path: '/add',
+        name: 'Add',
+        component: () => import('@/views/Add')
+    },
+    {
+        path: '/edit/:id',
+        name: 'Edit',
+        component: () => import('@/views/Edit')
+    },
 ]
 
 const router = new Router({
